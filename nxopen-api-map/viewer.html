@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NXOpen Python API 思维导图</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="data/nxopen_data.js"></script>
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<header>
+  <h1>NXOpen Python API 思维导图</h1>
+  <div class="stats" id="stats"></div>
+  <div class="search-box">
+    <span class="icon">🔍</span>
+    <input type="text" id="search-input" placeholder="搜索类，方法或属性名称..." autocomplete="off">
+    <span class="clear" id="search-clear">✕</span>
+    <div class="search-results" id="search-results"></div>
+  </div>
+  </header>
+<div class="main">
+  <div class="mindmap-panel">
+    <div class="mindmap-toolbar">
+      <div class="mt-row">
+        <button id="btn-fit">适应屏幕</button>
+        <button class="btn-expand-all" id="btn-collapse">全部折叠</button>
+        <span class="zoom-info" id="zoom-info"></span>
+      </div>
+      <div class="mt-hint">💡 点击节点展开/折叠 · 拖拽空白处平移 · 滚轮缩放</div>
+    </div>
+    <svg id="mindmap-svg"></svg>
+    <div class="loading" id="loading"><div class="spinner"></div>正在生成思维导图...</div>
+  </div>
+  <div class="resizer" id="resizer"></div>
+  <div class="detail-panel" id="detail-panel">
+    <div class="welcome" id="welcome">
+      <h2>NXOpen Python API 导览</h2>
+      <div class="hint">
+        <b style="color:#58a6ff">操作指南：</b><br>
+        1. 点击左侧思维导图中的<b>域节点</b>（圆形）展开/折叠模块<br>
+        2. 点击<b>模块节点</b>在右侧查看该模块的类列表和简介<br>
+        3. 点击右侧<b>类卡片</b>展开该类的方法/属性列表及说明<br>
+        4. 使用顶部<b>搜索框</b>快速查找任意类名或方法名<br>
+        5. 点击面包屑导航可快速返回上级
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
