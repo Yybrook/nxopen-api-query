@@ -4,6 +4,8 @@
 
 一个面向 **Siemens NX 2212** 的 NXOpen Python API 工程，包含 **类型存根生成** → **思维导图可视化** → **全文检索引擎** 三条衔接的子项目，覆盖全部 **99 个模块、23,377 个类、41,501 个方法、48,017 个属性**（共 1,778 个 `.pyi` 类型存根）。
 
+**NXOpen API 全景思维导图**： [nxopen-api-map](https://yybrook.github.io/nxopen-api-query/nxopen-api-map/viewer.html)
+
 ---
 
 ## 📚 工程概览
